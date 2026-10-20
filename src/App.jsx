@@ -66,19 +66,19 @@ const EMPTY_DATA = {
     2: ["AF15","AF18","AF20","AS03","AS20","AS22","AS25","AG-24-B"],
     3: ["AF15","AF26A","AF26B","AS03","AS08","AS19","AS22","AS25","AS27","AG-24-B"],
     4: ["AF13","AF14","AF18","AF23","AF26A","AF26B","AS08","AS20","AS22","AS25","AG-24-B","AG-25"],
-    5: ["AF17","AF26A","AF26B","AS03","AS08","AS17","AS18","AS19","AS20","AS22","AS24","AS25","AS27","AG-22","AG-24-B","AG-25"],
+    5: ["AF17","AF20","AF23","AF26A","AF26B","AS03","AS08","AS17","AS18","AS19","AS20","AS22","AS24","AS25","AS27","AG-22","AG-24-B","AG-25"],
     6: ["AF14","AF15","AF18","AF19","AF20","AF23","AF24","AF26A","AF26B","AS03","AS08","AS19","AS20","AS22","AS25","AG-22","AG-25"],
     7: ["AF16","AF17","AF18","AF19","AF20","AF24","AF26A","AF26B","AS08","AS19","AS20","AS22","AS24","AS25","AG-25"],
     8: ["AF15","AF17","AF18","AF21","AF26B","AS03","AS08","AS17","AS18","AS22","AS24","AS25","AS27","AG-24-B"],
     9: ["AF13","AF15","AF16","AF17","AF18","AF20","AF21","AF24","AF26A","AF26B","AS03","AS08","AS17","AS18","AS20","AS22","AS24","AS25","AS27","AG-22","AG-24-B","AG-25"],
-    10: ALL_ROOM_IDS
+    10: ALL_ROOM_IDS.filter((id) => id !== "AF14")
   },
   Tu: {
-    1: ["AF15","AF16","AF17","AF18","AF19","AF21","AF26A","AF26B","AS03","AS08","AS20","AS22","AS24","AS25","AS27","AG-24-B","AG-25"],
-    2: ["AF14","AF15","AF16","AF17","AF19","AF21","AS03","AS08","AS20","AS22","AS24","AS25","AS27","AG-25"],
-    3: ["AF13","AF14","AF15","AF21","AS03","AS08","AS17","AS18","AS19","AS25"],
+    1: ["AF14","AF15","AF16","AF17","AF18","AF19","AF21","AF26A","AF26B","AS03","AS08","AS20","AS22","AS24","AS25","AS27","AG-24-B","AG-25"],
+    2: ["AF14","AF15","AF16","AF17","AF19","AF21","AS03","AS08","AS20","AS22","AS24","AS25","AS27"],
+    3: ["AF14","AF21","AS03","AS08","AS17","AS18","AS19","AS25"],
     4: ["AF13","AF16","AF17","AF18","AF20","AF26B","AS08","AS22","AS25","AG-22"],
-    5: ["AF16","AF17","AF18","AF19","AF20","AF21","AF23","AF24","AF26A","AF26B","AS03","AS08","AS17","AS18","AS19","AS20","AS22","AS25","AS27","AG-22","AG-24-B"],
+    5: ["AF13","AF16","AF17","AF18","AF19","AF20","AF21","AF23","AF24","AF26A","AF26B","AS03","AS08","AS17","AS18","AS19","AS20","AS22","AS25","AS27","AG-22","AG-24-B"],
     6: ["AF13","AF15","AF16","AF18","AF20","AS03","AS08","AS18","AS19","AS22","AS25","AG-22"],
     7: ["AF15","AF16","AF17","AF18","AF19","AF23","AS03","AS08","AS20","AS22","AS25","AG-23"],
     8: ["AF18","AF23","AF24","AF26A","AS03","AS08","AS18","AS22","AS25","AS27","AG-23","AG-24-B"],
@@ -101,8 +101,8 @@ const EMPTY_DATA = {
     1: ["AF19","AF20","AS03","AS08","AS17","AS22","AS25","AG-23","AG-24-B","AG-25"],
     2: ["AF16","AS03","AS08","AS20","AS22","AS25","AG-25"],
     3: ["AF13","AF14","AF17","AF21","AS03","AS20","AS22","AS24","AS25","AS27"],
-    4: ["AF18","AF26A","AF26B","AS03","AS17","AS19","AS22","AS25","AG-22","AG-24-B","AG-25"],
-    5: ["AF17","AF19","AF21","AF23","AF24","AS03","AS08","AS18","AS19","AS20","AS22","AS24","AS25","AS27","AG-22","AG-23","AG-24-B","AG-25"],
+    4: ["AF18","AF26A","AF26B","AS03","AS19","AS22","AS25","AG-22","AG-24-B","AG-25"],
+    5: ["AF19","AF21","AF23","AF24","AS03","AS08","AS18","AS19","AS20","AS22","AS24","AS25","AS27","AG-22","AG-23","AG-24-B","AG-25"],
     6: ["AF13","AF14","AF15","AF23","AS03","AS08","AS17","AS22","AS27","AG-22","AG-24-B","AG-25"],
     7: ["AF15","AF16","AF18","AF26A","AS03","AS08","AS17","AS18","AS20","AS22","AS24","AS25","AG-22","AG-24-B","AG-25"],
     8: ["AF13","AF14","AF15","AF16","AF17","AF18","AF23","AF24","AS03","AS08","AS17","AS20","AS22","AS24","AS25","AG-24-B"],
@@ -115,7 +115,7 @@ const EMPTY_DATA = {
     3: ["AF14","AF16","AF19","AF20","AF26A","AF26B","AS03","AS08","AS17","AS18","AS25","AG-24-B"],
     4: ["AF15","AF17","AF19","AF21","AF26A","AF26B","AS03","AS08","AS17","AS18","AS20","AS22","AS27","AG-24-B"],
     5: ["AF13","AF14","AF15","AF16","AF17","AF20","AF21","AF23","AF24","AF26A","AF26B","AS03","AS08","AS17","AS18","AS19","AS20","AS22","AS24","AS25","AS27","AG-22","AG-23","AG-24-B","AG-25"],
-    6: ["AF13","AF14","AF15","AF16","AF17","AF18","AF19","AF21","AF26A","AF26B","AS03","AS08","AS20","AS22","AS24","AS25","AS27","AG-22","AG-24-B"],
+    6: ["AF13","AF14","AF16","AF17","AF18","AF19","AF21","AF26A","AF26B","AS03","AS08","AS20","AS22","AS24","AS25","AS27","AG-22","AG-24-B"],
     7: ["AF14","AF21","AF24","AF26A","AF26B","AS03","AS08","AS20","AS22","AS24","AS25","AG-22","AG-23","AG-25"],
     8: ["AF13","AF15","AF17","AF21","AF23","AF26A","AF26B","AS03","AS08","AS17","AS18","AS19","AS20","AS22","AS24","AS25","AS27","AG-22","AG-23"],
     9: ["AF13","AF14","AF15","AF18","AF19","AF20","AF21","AF23","AF24","AF26A","AF26B","AS03","AS08","AS17","AS18","AS19","AS20","AS22","AS24","AS25","AS27","AG-22","AG-23","AG-24-B","AG-25"],
@@ -900,7 +900,7 @@ export default function App() {
             <div>
               <div className="brand-title">
                 MRIIRS Empty Classroom Finder
-                <span className="badge-wef">w.e.f. 12 Oct 2026</span>
+                <span className="badge-wef">w.e.f. 21 Oct 2026</span>
               </div>
               <div className="brand-sub">
                 27 Classrooms Tracked • 1st Floor (AF), 2nd Floor (AS + AS03/08/22/25) & Ground (AG)
